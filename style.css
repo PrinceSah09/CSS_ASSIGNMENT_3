@@ -25,7 +25,7 @@ section {
     display: flex;
     flex-wrap: wrap;
 
-    /* Use Short Hand */
+    /* Short Hand */
     border: 1px solid black;
     box-sizing: border-box;
 }
@@ -39,7 +39,7 @@ section {
     width: 100%;
     height: 49.2%;
 
-    /* Used Short Hand */
+    /* Short Hand */
     border: 1px solid black;
     background-color: #FF9999;
 }
@@ -90,12 +90,44 @@ section {
 
 .text {
     text-align: center;
-
+    margin: 0 14px 0 14px;
     /* Used Short Hand */
-    margin: 0 14px 0 14px; 
     font-size: 17px;
 }
 
 .text p {
     margin-top: -15px;
+}
+
+
+/* MEDIA QUERRY FOR RESPONSIVENESS */
+@media only screen and (max-width: 850px) {
+    .hero {
+        padding: 10px;
+        margin: 0 10px 0 10px;
+    }
+
+    .wrapper {
+        /* Set the width to 100% for better responsiveness */
+        width: 100%;
+        height: 100%;
+    }
+
+    .Top_Box {
+        /* Adjust the height for better display on smaller screens */
+        height: auto;
+        padding: 10px;
+    }
+
+    .Bottom_Left_Box,
+    .Bottom_Right_Box {
+        /* 100% width for better responsiveness */
+        width: 100%;
+        height: auto;
+    }
+
+    .Bottom_Left_Box img {
+        height: 97%;
+        width: 98%;
+    }
 }
