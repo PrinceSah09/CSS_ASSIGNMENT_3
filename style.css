@@ -1,9 +1,10 @@
-/* Resetting Defalt Browswer Settings */
+/* Resetting Default Browser Settings */
 * {
     padding: 0;
     margin: 0;
 }
 
+/* Hero Section Styling */
 .hero {
     border: 1px solid black;
     padding: 15px;
@@ -19,28 +20,26 @@ section {
     align-items: center;
 }
 
+/* Wrapper Styling */
 .wrapper {
     height: 500px;
     width: 800px;
     display: flex;
     flex-wrap: wrap;
-
-    /* Short Hand */
     border: 1px solid black;
+    /* Short Hand */
     box-sizing: border-box;
 }
 
-
-/* Box Styling */
+/* Top Box Styling */
 .Top_Box {
     display: flex;
     align-items: center;
     flex-direction: column;
     width: 100%;
     height: 49.2%;
-
-    /* Short Hand */
     border: 1px solid black;
+    /* Short Hand */
     background-color: #FF9999;
 }
 
@@ -55,7 +54,7 @@ section {
     margin-top: 40px;
 }
 
-
+/* Bottom Left Box Styling */
 .Bottom_Left_Box {
     width: 70%;
     height: 50.3%;
@@ -72,6 +71,7 @@ section {
     width: 98%;
 }
 
+/* Bottom Right Box Styling */
 .Bottom_Right_Box {
     display: flex;
     width: 29.5%;
@@ -99,29 +99,26 @@ section {
     margin-top: -15px;
 }
 
-
-/* MEDIA QUERRY FOR RESPONSIVENESS */
+/* MEDIA QUERY FOR RESPONSIVENESS */
 @media only screen and (max-width: 850px) {
     .hero {
         padding: 10px;
         margin: 0 10px 0 10px;
     }
 
+    /* Adjustments for Better Responsiveness */
     .wrapper {
-        /* Set the width to 100% for better responsiveness */
         width: 100%;
         height: 100%;
     }
 
     .Top_Box {
-        /* Adjust the height for better display on smaller screens */
         height: auto;
         padding: 10px;
     }
 
     .Bottom_Left_Box,
     .Bottom_Right_Box {
-        /* 100% width for better responsiveness */
         width: 100%;
         height: auto;
     }
